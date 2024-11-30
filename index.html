@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Global Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Colorful Global Translator</h1>
+        <div class="translation-box">
+            <div class="language-select">
+                <select id="source-lang"></select>
+                <button id="swap-languages">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="swap-icon">
+                        <path d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <select id="target-lang"></select>
+            </div>
+            <div class="text-areas">
+                <textarea id="source-text" placeholder="Enter text to translate"></textarea>
+                <textarea id="target-text" placeholder="Translation" readonly></textarea>
+            </div>
+            <button id="translate-btn">Translate</button>
+        </div>
+    </div>
+    <div class="background-animation"></div>
+    <script src="script.js"></script>
+</body>
+</html>
